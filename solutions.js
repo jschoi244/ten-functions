@@ -21,3 +21,23 @@
  * concat
  */
 
+const isTrue = input => input === true;
+const isFalse = input => input === false;
+const not = input => !input;
+const addOne = input => Number(input) + 1;
+const isEven = input => {
+    if (typeof(Number(input)) === 'number' || input !== false) {
+        if (input % 2 === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
+const isIdentical = (input1, input2) => input1 === input2;
+const isEqual = (input1, input2) => input1 == input2;
+const or = (input1, input2) => input1 || input2;
+const and = (input1, input2) => input1 && input2;
+const concat = (input1, input2) => String(input1) + String(input2);
